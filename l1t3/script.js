@@ -1,11 +1,6 @@
-var a = 7;
+var n = 7, S=0;
 
-if (a / 7 == 1) {
-		console.log (true);
+for ( var i = 1 ; i <= n ; i++) {
+		S = S + 1 / i ;			
 }
-else if (a / 1 == 7) {
-		console.log (true);
-}
-else{
-		console.log (false);
-}
+console.log(S);
