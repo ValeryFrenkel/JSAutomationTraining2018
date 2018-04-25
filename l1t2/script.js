@@ -1,11 +1,8 @@
-var a = 7;
+var n=7;
 
-if (a / 7 == 1) {
-		console.log (true);
+if ((n % 2 == 0)&&(n != 2)) {
+	console.log(false)
 }
-else if (a / 1 == 7) {
-		console.log (true);
-}
-else{
-		console.log (false);
+else if ((n % 1==0)&&(n / n == 1)) {
+	console.log(true)
 }
