@@ -1,8 +1,24 @@
-// The numeric array is given. You should find amount of reps for each element in the array and log it on
-// console. For example: for the array [ 1, 2, 1, 2, 3.14, 4, 2, 1] you should log:
-// 1 - 3, 2 - 3, 3.14 - 1, 4 - 1 (not necessary in this order)
+// Algorithms for tasks 1 and 2 implement as functions with one argument. Run both function with the same
+// array in one script.js file.
 
-var A = [ 1, 2, 1, 2, 7, 9, 2, 7]; 
+var A = [-1,2,-3,-2,4,2,-3]; 
+
+function Task1(A) {
+
+
+var B = A.filter(function(number) {
+	return number > 0;
+});
+
+var C = A.filter(function(number) {
+	return number < 0;
+});
+
+console.log("B:", B, "C:", C );
+
+}
+
+function Task2(A) {
 
 function compareNumeric(a, b) { 
 return a - b; 
@@ -22,8 +38,15 @@ else { console.log(A[i],'количество:', count);
 count=1;
 }
 }
-if(i=A.length){
-if(A[i] == A[i-1]){count++}
+if(i === A.length){
+if(A[i] === A[i-1]){count++}
 console.log(A[i],'количество:', count);
 } 
 }
+
+}
+
+console.log("Task 1:");
+Task1(A)
+console.log("Task 2:");
+Task2(A)
