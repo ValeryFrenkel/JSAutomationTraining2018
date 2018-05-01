@@ -17,16 +17,12 @@ if(i!= A.length){
 
 if(A[i] === A[i+1]) {
 count++
-}
-
+} 
 else { console.log(A[i],'количество:', count);
 count=1;
 }
 }
-
-// проверка когда доходит до последнего элемента в массиве
-
-if(i === A.length){
+if(i=A.length){
 if(A[i] == A[i-1]){count++}
 console.log(A[i],'количество:', count);
 } 
